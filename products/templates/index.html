@@ -1,0 +1,22 @@
+{% extends 'theme.html' %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+    {% for y in x %}
+<div class="col-md-3">
+    <div class="card" >
+      <img src="{{y.image}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{y.name}}</h5>
+    <p class="card-text">${{ y.price }}</p>
+    <a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Frukminim1.flixcart.com%2Fimage%2F416%2F416%2Fjw9ke4w0%2Ffruit-vegetable-basket%2Ff%2Fw%2Fd%2F3-layer-fruit-stand-topaz-original-imafgx7dgnhwvbyy.jpeg%3Fq%3D70&imgrefurl=https%3A%2F%2Fwww.flipkart.com%2Fkeepwell-stainless-steel-3-step-fruit-vegetable-stand-kitchen-rack-accessories-sand-home-basket%2Fp%2Fitm6056359b1954c&tbnid=o29P8tkpdPRAQM&vet=12ahUKEwjoxr_K8rz9AhWihNgFHTl0A-AQMygAegUIARDPAQ..i&docid=FiJO6IWv1agJzM&w=259&h=416&q=kitchen%20accessories%20vegetables%20and%20fruits%20&hl=en-GB&ved=2ahUKEwjoxr_K8rz9AhWihNgFHTl0A-AQMygAegUIARDPAQ" class="btn btn-primary">Buy</a>
+  </div>
+</div>
+</div>
+
+  {% endfor %}
+</div>
+</div>
+
+ {% endblock %}
